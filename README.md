@@ -13,35 +13,43 @@ A simple HTTP server that supports both PUT and GET methods, allowing file uploa
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/http-put-server.git
-cd http-put-server
-chmod +x http-put-server.py
+git clone https://github.com/yourusername/httput.git
+cd httput
+chmod +x httput.py
 ```
 
 ## Usage
 
 Start server (default port 8080):
 ```bash
-./http-put-server.py
+./httput.py
 ```
 
 Specify custom port:
 ```bash
-./http-put-server.py -p 9000
+./httput.py -p 9000
 ```
 
 ## File Upload Examples
 
 Linux (curl):
 ```bash
-curl -T file.txt http://server:8080/file.txt
+curl -T file.txt http://server_ip:8080/file.txt
 ```
 
 Windows (PowerShell):
 ```powershell
-Invoke-WebRequest -Uri "http://server:8080/file.txt" -Method PUT -InFile file.txt
+Invoke-WebRequest -Uri "http://server_ip:8080/file.txt" -Method PUT -InFile file.txt
 ```
 
+## Shortcut
+Move the script into your local bin folder to execute it directly from any folder location
+```
+mv httput.py ~/.local/bin/httput
+
+# Usage
+httput -p 9000
+```
 
 ## Author
 
