@@ -13,7 +13,7 @@ A simple HTTP server that supports both PUT and GET methods, allowing file uploa
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/httput.git
+git clone https://github.com/vietsou/httput.git
 cd httput
 chmod +x httput.py
 ```
